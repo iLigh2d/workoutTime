@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "futura";
+  src: url(../fonts/futuramdbtrusbyme_medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "futura";
+  src: url(../fonts/futuramdbtrusbyme_bold.otf);
+  font-weight: 700;
+}

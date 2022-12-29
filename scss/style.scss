@@ -65,9 +65,14 @@ body {
     height: 225px;
     bottom: 0;
     opacity: 0.1;
+    z-index: 0;
     @media (max-width: $md4+px) {
       opacity: 0.2;
     }
+  }
+  &__wrapper{
+    position: relative;
+    z-index: 1;
   }
   // .header__menu
   &__menu {

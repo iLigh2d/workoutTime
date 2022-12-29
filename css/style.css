@@ -117,7 +117,7 @@ body._lock {
   margin-bottom: 100px;
 }
 .header__bg {
-  background: url(../img/info/город2.png);
+  background: url(../img/info/город.png);
   background-repeat: repeat-x;
   position: absolute;
   width: 100%;
@@ -327,6 +327,7 @@ main {
 }
 .intro__img {
   width: 200px;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 .intro__title {
@@ -334,6 +335,8 @@ main {
   font-size: 32px;
   line-height: 130%;
   font-weight: 700;
+}
+.intro__title:not(:last-child) {
   margin-bottom: 20px;
 }
 @media (max-width: 479.98px) {
@@ -403,11 +406,13 @@ main {
 }
 .info__title {
   color: #000000;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
+}
+.info__title:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media (max-width: 991.98px) {
   .info__title {
@@ -428,9 +433,10 @@ main {
   color: #000000;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+.team__title:not(:last-child) {
   margin-bottom: 60px;
 }
 .team__items {
@@ -513,7 +519,7 @@ main {
   transform: translate(0, 0);
   opacity: 1;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .slider-warpper {
     padding: 0;
     margin-bottom: 80px;
@@ -551,7 +557,7 @@ main {
   color: #000;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .swiper-button-prev, .swiper-button-next {
     display: none;
   }
@@ -588,6 +594,11 @@ main {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+@media (max-width: 600px) {
+  .swiper-slide img {
+    width: 90%;
+  }
 }
 
 .swiper-container {

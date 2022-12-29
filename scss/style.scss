@@ -58,7 +58,7 @@ body {
   height: 100vh;
   margin-bottom: 100px;
   &__bg {
-    background: url(../img/info/город2.png);
+    background: url(../img/info/город.png);
     background-repeat: repeat-x;
     position: absolute;
     width: 100%;
@@ -281,6 +281,7 @@ main{
   // .intro__img
   &__img {
     width: 200px;
+    max-width: 100%;
     margin-bottom: 20px;
 
   }
@@ -290,7 +291,9 @@ main{
     font-size: 32px;
     line-height: 130%;
     font-weight: 700;
-    margin-bottom: 20px;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
     @media (max-width: $md4+px) {
       font-size: 24px;
     }
@@ -371,11 +374,13 @@ main{
   // .info__title
   &__title {
     color: $black;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 40px;
     text-transform: uppercase;
     text-align: center;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
     @media (max-width: $md2+px) {
       display: none;
     }
@@ -403,10 +408,11 @@ main{
     color: $black;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 60px;
+    &:not(:last-child){
+      margin-bottom: 60px;
+    }
   }
   // .team__items
   &__items {
@@ -508,7 +514,7 @@ main{
   position: relative;
   padding: 0 70px;
   margin-bottom: 130px;
-  @media (max-width: $md3+px) {
+  @media (max-width: $md2+px) {
     padding: 0;
     margin-bottom: 80px;
   }
@@ -542,7 +548,7 @@ main{
   
 }
 .swiper-button-prev, .swiper-button-next{
-  @media (max-width: $md3+px) {
+  @media (max-width: $md2+px) {
     display: none;
   }
 }
@@ -583,6 +589,9 @@ main{
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+     @media (max-width: 600px) {
+      width: 90%;
+    }
 }
 
 .swiper-container {

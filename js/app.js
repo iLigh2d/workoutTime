@@ -62,10 +62,11 @@ var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
           slidesPerGroup: 3,
         },
-        768: {
+        600: {
           slidesPerView: 2,
           slidesPerGroup: 2,
         },
+        
       },
         
   pagination: {

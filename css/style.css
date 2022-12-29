@@ -356,7 +356,6 @@ main {
 .info__content {
   display: flex;
   align-items: center;
-  box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.2);
   padding: 50px;
 }
 @media (max-width: 991.98px) {
@@ -434,10 +433,10 @@ main {
   transition: all 1s ease;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 300px [3];
+  grid-template-columns: repeat(3, 300px);
   grid-template-areas: repeat(2, 1fr);
-  grid-column-gap: 30px;
+  justify-content: space-between;
   grid-row-gap: 80px;
 }
 .team__items._hide {
@@ -557,6 +556,10 @@ main {
   bottom: -25px;
   left: 0;
   width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
 }
 
 .swiper-container {

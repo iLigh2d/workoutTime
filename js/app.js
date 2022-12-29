@@ -52,8 +52,11 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   slidesPerGroup: 1,
-  speed: 1000,
+  speed: 2000,
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
   breakpoints: {
         1100: {
           slidesPerView: 3,
